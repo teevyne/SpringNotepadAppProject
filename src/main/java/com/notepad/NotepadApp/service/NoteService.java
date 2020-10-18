@@ -12,7 +12,7 @@ public interface NoteService {
 
     List<Note> findAllNotes(Note note);
 
-    void deleteNote(long NoteId);
+    void deleteNote(Integer NoteId);
 
-    Note findNoteById(long noteId);
+    Note findNoteById(Integer noteId);
 }

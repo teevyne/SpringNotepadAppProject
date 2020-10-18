@@ -28,7 +28,7 @@ public class NoteController {
     }
 
     @GetMapping("/getnote/{id}")
-    public ResponseEntity<Note> getANote(@PathVariable long id){
+    public ResponseEntity<Note> getANote(@PathVariable Integer id){
         Note result = noteService.findNoteById(id);
         return new ResponseEntity<Note>(result, HttpStatus.CREATED);
     }
@@ -40,7 +40,7 @@ public class NoteController {
     }
 
     @DeleteMapping("getnote/{id}")
-    public void deleteNote(@PathVariable long id){
+    public void deleteNote(@PathVariable Integer id){
         noteService.deleteNote(id);
     }
 }
