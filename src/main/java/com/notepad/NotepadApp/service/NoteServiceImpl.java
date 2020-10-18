@@ -27,11 +27,11 @@ public class NoteServiceImpl implements NoteService {
         return noteRepository.findAll();
     }
 
-    public void deleteNote(long noteId){
+    public void deleteNote(Integer noteId){
         noteRepository.deleteById(noteId);
     }
 
-    public Note findNoteById(long noteId){
+    public Note findNoteById(Integer noteId){
         return noteRepository.findById(noteId).orElse(null);
     }
 }
