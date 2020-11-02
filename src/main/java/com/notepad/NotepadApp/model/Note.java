@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.Instant;
+import java.util.Date;
 
 @Entity
 @Table
@@ -23,5 +24,5 @@ public class Note {
 
     private String body;
 
-//    private Instant postDate;
+//    private Date postDate;
 }
